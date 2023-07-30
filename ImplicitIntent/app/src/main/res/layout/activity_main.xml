@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/visit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="Visit NUS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#abcdef"
+
+        app:layout_constraintBottom_toTopOf="@id/call"
+        app:layout_constraintEnd_toStartOf="@id/locate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/locate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="Locate NUS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#f3d09d"
+
+        app:layout_constraintBottom_toTopOf="@id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/visit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/call"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="Call NUS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#bed8a1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/visit" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="Email NUS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#c5b3e4"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/call"
+        app:layout_constraintTop_toBottomOf="@id/locate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
